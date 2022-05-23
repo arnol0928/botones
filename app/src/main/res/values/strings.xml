@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">botones</string>
+    <string name="icono_estrella" />
+    <string name="seleccion" />
+    <string name="click" />
+    <string name="on" />
+    <string name="off" />
+    <string name="Aceptar" />
+    <string name="Cancelar" />
+    <string name="meat">meat</string>
+    <string name="femenino">Femenino</string>
+    <string name="masculino">Masculino</string>
+    <string name="otro">Otro</string>
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="UseSwitchCompatOrMaterialXml">
+
+    <Button
+        android:id="@+id/btnBotonSimple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="click" />
+
+    <ToggleButton
+        android:id="@+id/btnToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnBotonSimple"
+        android:textOff="off"
+        android:textOn="on" />
+
+    <Switch
+        android:id="@+id/btnSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnToggle"
+        android:switchPadding="10dp"
+        android:text="seleccion" />
+
+    <ImageButton
+        android:id="@+id/btnImagen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSwitch"
+        android:contentDescription="@string/icono_estrella"
+        android:padding="16dp"
+        android:src="@drawable/ic_baseline_bedtime_24" />
+
+    <LinearLayout
+        android:id="@+id/barraBotones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        style="?android:attr/buttonBarStyle">
+        <Button android:id="@+id/btnAceptar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Aceptar"
+            style="?android:attr/buttonBarButtonStyle" />
+        <Button android:id="@+id/btnCancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancelar"
+            style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/checkbox_meat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnImagen"
+        android:text="meat" />
+
+    <RadioGroup
+        android:id="@+id/rdg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkbox_meat">
+        <RadioButton android:id="@+id/radio_f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/femenino"
+            />
+        <RadioButton android:id="@+id/radio_m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/masculino"
+
+            />
+        <RadioButton android:id="@+id/radio_otro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/otro"
+            />
+    </RadioGroup>
+
+</RelativeLayout>
